@@ -39,6 +39,55 @@ An LLM-powered agent-assistance system that:
 4. **Conservative start, gradual autonomy**
 5. **Continuous learning from human decisions**
 
+### System Flow Overview
+
+This diagram shows the end-to-end flow from case trigger through customer resolution:
+
+```mermaid
+flowchart TD
+    Start([Case Trigger]) --> Input{Input Source}
+    Input -->|Customer| CustomerMsg[Customer Message<br/>Chat/Email]
+    Input -->|System| FlightAPI[3rd Party API<br/>Flight Status]
+    
+    CustomerMsg --> Categorize
+    FlightAPI --> Categorize
+    
+    Categorize[2. Categorize & Prioritize<br/>LLM Classifier<br/>GPT-4o mini<br/>Urgency + Type]
+    
+    Categorize --> Context[3. Context Assembly<br/>RAG Pipeline]
+    
+    Context --> VectorDB[(Vector Database<br/>KB + Laws + Rules<br/>Historical Cases)]
+    VectorDB --> Context
+    
+    Context --> Reasoning[4. LLM Reasoning<br/>Claude Sonnet<br/>Synthesizes context<br/>Generates options<br/>Explains decisions]
+    
+    Reasoning --> Human[5. Human Decision<br/>Agent Dashboard<br/>Review options<br/>Approve/Modify/Reject]
+    
+    Human --> Execute[6. Execute Resolution<br/>Rebook/Refund/Compensate]
+    Execute --> Customer([Customer<br/>Resolution Delivered])
+    
+    Human --> Learning[(Learning Loop<br/>Log decisions<br/>Improve model)]
+    Learning -.feedback.-> Reasoning
+    
+    style Start fill:#e1f5ff
+    style Categorize fill:#fff4e1
+    style Context fill:#e8f5e9
+    style VectorDB fill:#c8e6c9
+    style Reasoning fill:#f3e5f5
+    style Human fill:#fff9c4
+    style Execute fill:#e8f5e9
+    style Customer fill:#4caf50,color:#fff
+```
+
+**Flow Steps:**
+1. **Case Trigger** → Customer message or 3rd party API (flight status)
+2. **Categorize** → LLM classifies issue type and urgency
+3. **Context Assembly** → RAG retrieves policies, laws, historical cases from vector DB
+4. **LLM Reasoning** → Claude Sonnet generates resolution options with explanations
+5. **Human Decision** → Agent reviews and approves/modifies/rejects
+6. **Execute** → Resolution delivered to customer
+7. **Learning Loop** → Decisions logged to improve model
+
 ---
 
 ## System Architecture
