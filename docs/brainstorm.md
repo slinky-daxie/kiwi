@@ -272,3 +272,55 @@ A: **Both**:
 
 **Goal**: Show how I work with LLMs in real life, making informed decisions with clear rationale.
 
+---
+
+## Refinements (January 3, 2026)
+
+### MVP-Critical Architectural Changes
+
+**1. Prompt-Injected Rule Book**
+- **What**: Add explicit rule book as part of LLM system prompt (Step 4)
+- **Why**: 
+  - Faster iteration than hard-coded validation logic
+  - Easy to audit and version control
+  - Clear compliance boundaries for LLM
+  - Can be tested and validated independently
+- **Feeds into**: LLM Reasoning step as part of context
+
+**2. Structured Output Format**
+- **What**: Formalize LLM output with explicit fields
+- **Why**: 
+  - Agents need fast review capability
+  - Reduces cognitive load
+  - Enables metrics tracking
+  - Critical for production readiness
+- **Includes**:
+  - 2-4 resolution options
+  - Confidence scores per option (0-100%)
+  - Policy citations (which rules apply)
+  - Reasoning explanations
+  - Uncertainty flags (missing data, edge cases)
+  - Escalation triggers
+
+**3. Booking Database Integration**
+- **What**: Explicit connection to customer booking database in Context Assembly (Step 3)
+- **Why**:
+  - **Verify claim legitimacy**: Confirm customer has actual booking
+  - **Cross-reference with Flight API**: Validate delays/cancellations against actual bookings
+  - **Enable proactive detection**: Monitor bookings for flight issues before customer complains
+  - **Provide resolution context**: Pull specific booking details (dates, routes, prices, class)
+  - **Prevent fraud**: Ensure claims match real bookings
+- **Critical for MVP**: Without this, we're trusting customer claims without verification
+
+### Impact on Architecture
+
+These additions strengthen MVP viability by:
+- Making system auditable (rule book + structured output)
+- Enabling fast agent review (structured output + confidence)
+- Ensuring data integrity (booking database verification)
+- Supporting proactive case detection (booking + flight status cross-reference)
+
+All changes documented in:
+- `design/agentic-flow-v1.md` (updated diagram + flow steps)
+- `docs/decision-log.md` (decision #9 on prompt-injected rules)
+

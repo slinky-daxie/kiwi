@@ -398,6 +398,68 @@ Implement **three-tier confidence system**:
 
 ---
 
+## Decision 9: Prompt-Injected Rule Book (Not Hard-Coded Validation)
+
+**Date**: January 3, 2026  
+**Status**: Proposed for MVP
+
+### Context
+LLM needs to generate resolution options that comply with Kiwi's policies, guarantee terms, and legal requirements. Need to decide how to enforce these rules.
+
+### Decision
+Use **prompt-injected rule book** where policies and compliance rules are passed as part of the system prompt to Claude Sonnet, rather than hard-coded validation logic.
+
+### Rationale
+- **Iteration speed**: Can update rules without code changes
+- **Auditability**: Rules visible in prompt logs, easy to inspect
+- **Version control**: Rules as text files, trackable in git
+- **Testing**: Can test rule changes independently
+- **Transparency**: LLM reasoning references specific rules
+- **Flexibility**: Easy to A/B test different rule formulations
+
+### Alternatives Considered
+1. **Hard-coded validation rules** (if-then logic)
+   - Pros: Guaranteed enforcement, no LLM interpretation
+   - Cons: Slow to update, rigid, hard to maintain as rules grow
+   - Why not chosen: Inflexible, requires code deploys for policy changes
+
+2. **Fine-tuned model with embedded rules**
+   - Pros: Rules "learned" by model, no prompt overhead
+   - Cons: Black box, hard to audit, expensive to retrain
+   - Why not chosen: Can't explain which rule was violated
+
+3. **Hybrid: LLM generates + separate validator**
+   - Pros: Defense in depth, catch LLM errors
+   - Cons: Duplicate rule logic, synchronization issues
+   - Why not chosen: Adds complexity; may add as Phase 2 safeguard
+
+4. **External rules engine** (e.g. Drools)
+   - Pros: Industry-standard approach, powerful
+   - Cons: Overhead, requires integration layer
+   - Why not chosen: Over-engineering for MVP
+
+### Trade-offs
+- **Enforcement guarantee**: Slightly weaker than hard-coded (LLM could misinterpret)
+- **Flexibility**: Much higher (update rules in minutes, not days)
+- **Explainability**: Better (LLM cites rules in reasoning)
+- **Maintenance**: Easier (rules as documentation)
+- **Verdict**: MVP benefits outweigh risk; add validation layer if needed after testing
+
+### Implementation Details
+- Rules stored in `rules/policy-rulebook.md` as structured markdown
+- Injected into system prompt before each LLM call
+- Version controlled with git (track rule changes over time)
+- Each rule has unique ID for citation (e.g. "RULE-001: Guarantee covers missed connections")
+
+### Success Criteria
+- 100% policy compliance (validated by human review in MVP)
+- Rule citation rate >90% (LLM references specific rules)
+- Zero "unknown rule" cases (all scenarios covered)
+- Rule update latency <5 minutes (edit → deploy)
+- Agent feedback: Rules "clear and consistent" >4/5
+
+---
+
 ## Future Decisions (To Be Made)
 
 ### Fine-Tuning Strategy (Phase 2)

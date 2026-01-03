@@ -24,6 +24,11 @@ flowchart TD
     Context --> VectorDB[(Vector Database<br/>KB + Laws + Rules<br/>Historical Cases)]
     VectorDB --> Context
     
+    Context --> BookingDB[(Booking Database<br/>Customer Bookings<br/>Flight Details<br/>Verify Claims)]
+    BookingDB --> Context
+    
+    FlightAPI -.cross-reference.-> BookingDB
+    
     Context --> Reasoning[4. LLM Reasoning<br/>Claude Sonnet<br/>+ Rule Book<br/>Synthesizes context<br/>Generates options<br/>Explains decisions]
     
     RuleBook[Rule Book<br/>Prompt-Injected<br/>Policy Guardrails<br/>Compliance Rules<br/>Version Controlled]
@@ -43,6 +48,7 @@ flowchart TD
     style Categorize fill:#fff4e1
     style Context fill:#e8f5e9
     style VectorDB fill:#c8e6c9
+    style BookingDB fill:#c8e6c9
     style RuleBook fill:#ffccbc
     style Reasoning fill:#f3e5f5
     style StructuredOutput fill:#fff9c4
@@ -59,9 +65,9 @@ flowchart TD
 
 2. **Categorize & Prioritize**: Fast LLM (GPT-4o mini) classifies the issue type and calculates urgency based on time-to-departure and customer location
 
-3. **Context Assembly**: RAG pipeline retrieves relevant information:
-   - Booking details
-   - Flight status
+3. **Context Assembly**: RAG pipeline retrieves and cross-references relevant information:
+   - **Booking details** (from Booking Database - verify customer claim legitimacy)
+   - **Flight status** (cross-referenced with bookings to validate delays/cancellations)
    - Policies from knowledge base
    - Laws and regulations
    - Similar historical cases
