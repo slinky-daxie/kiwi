@@ -1,6 +1,6 @@
 # Brainstorming Session: Agent-Assisted CS System for Kiwi
 *Date: January 1, 2026*
-*Interview: Principal Customer Service PM at Kiwi (January 7, 2026)*
+
 
 ## Context
 
@@ -323,4 +323,114 @@ These additions strengthen MVP viability by:
 All changes documented in:
 - `design/agentic-flow-v1.md` (updated diagram + flow steps)
 - `docs/decision-log.md` (decision #9 on prompt-injected rules)
+
+---
+
+## Future Vision & Roadmap Discussion (January 3, 2026 - Evening)
+
+### Context
+With 1 day before sharing GitHub, need to show:
+- Not just MVP thinking → where does this go?
+- End state vision (automation, advanced features)
+- Strategic PM thinking beyond the immediate build
+
+### Key Insights
+
+**1. Customer-Facing Applications** (High-value insight)
+- Problem: Research shows "customers say guarantee covers nothing"
+- Root cause: Transparency gap → customers don't understand coverage
+- Solution: Reuse same RAG infrastructure for customer education
+- **Brilliant leverage**: Same tech stack, different interface, solves trust issue
+
+**Applications**:
+- Pre-purchase: "Should I buy Guarantee for this risky connection?"
+- During trip: "What does my Guarantee cover in this situation?"
+- Post-issue: "Why this happened" explainer
+
+**Business Impact**:
+- Higher guarantee attachment rate (transparency → trust)
+- Reduced disappointment (set expectations upfront)
+- Ticket deflection (answer "what if" questions proactively)
+- Customer education scales with AI (no human cost)
+
+**2. Proactive Intelligence** (Phase 3)
+- Don't wait for customer to contact us → detect and resolve first
+- Predictive features:
+  - Risk scoring at booking time (show upfront)
+  - Pre-emptive rebooking (before disruption happens)
+  - Smart routing recommendations (optimize price/risk/convenience)
+- Shift from reactive support → proactive travel assistance
+
+**3. Multi-Agent Systems** (Phase 4)
+- Beyond single LLM → specialized agents working together
+- Negotiation agent (talks to airlines)
+- Personalization agent (learns preferences)
+- Sentiment agent (detects frustration, escalates)
+- Context enrichment agent (real-time external data)
+- More sophisticated than simple automation
+
+**4. Platform & Ecosystem** (Phase 5)
+- B2B applications: White-label for other OTAs
+- API for travel insurance companies
+- Partner airline integration
+- Industry leadership through shared learnings
+- Transform from internal tool → platform revenue
+
+### Roadmap Structure Created
+
+**5 Phases**:
+1. MVP (Q1 2026) - Human-in-the-loop, prove value
+2. Selective Automation + Customer Self-Service (Q2 2026)
+3. Proactive Intelligence (Q3 2026)
+4. Advanced AI & Multi-Agent (Q4 2026)
+5. Ecosystem & Platform (2027+)
+
+**Evolution of Metrics**:
+- Phase 1-2: TTFR (efficiency)
+- Phase 3-4: Customer stress reduction (experience)
+- Phase 5: LTV (business value)
+
+**Technical Maturity Path**:
+- Single-agent RAG → Multi-model orchestration → Predictive systems → Multi-agent collaboration → Platform
+
+### Innovation Highlights to Emphasize
+
+1. **Proactive not reactive** (industry standard: wait for complaints)
+2. **Transparent AI** (not black box)
+3. **Human-AI partnership** (augment, don't replace)
+4. **Customer-first data use** (minimize stress, not just cost)
+5. **Platform thinking** (build once, leverage everywhere)
+
+### Questions for Tomorrow's Review
+
+- Customer-facing apps: In-app? Web? SMS? All three?
+- Does transparency increase or decrease guarantee attachment?
+- How much proactive communication is helpful vs annoying?
+- Is Phase 4 multi-agent over-engineering?
+- Should B2B platform come earlier (Phase 3)?
+- Data sharing ethics: What level of anonymization?
+
+### Documents Created
+- `docs/product-roadmap.md` - Full 5-phase vision with:
+  - Business metrics per phase
+  - Technical evolution
+  - Innovation callouts
+  - Risk mitigation
+  - Open questions for discussion
+
+### Next Steps (Tomorrow)
+1. Review roadmap with fresh eyes
+2. Refine phases (too ambitious? Missing pieces?)
+3. Prioritize "must show" vs "nice to have"
+4. Validate assumptions (are these good ideas?)
+5. More brainstorming on specific features
+6. Decide what to emphasize in interview
+
+### Why This Matters
+Shows interviewer:
+- Strategic thinking (beyond MVP)
+- Customer empathy (transparency solves research finding)
+- Technical vision (AI capabilities evolution)
+- Business model thinking (platform revenue)
+- Not just "builder" but "product thinker"
 
