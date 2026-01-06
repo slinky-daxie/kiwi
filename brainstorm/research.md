@@ -1,4 +1,4 @@
-Research on customer support experiences in virtual interlining travel agencies (based on industry research and customer reviews).
+Research on customer support experiences in a virtual interlining travel agency (based on industry research and customer reviews).
 
 Key questions explored:
 - what are the top 5 problems?

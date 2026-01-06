@@ -105,9 +105,9 @@ Why this system:
 - Document initial thoughts in Notion (messy, stream of consciousness, incomplete)
 - Brainstorm with GPT5.2 to sharpen and expand ideas (why? I have a sub, save cursor tokens, and it’s good for brainstorming in my experience)
 
-### Building and Documenting
+### Designing and Documenting
 
-Building and documenting in Cursor (using various models) and GitHub:
+In Cursor (using various models) and GitHub:
 
 - Make thinking more concrete
 - Show how I approach complex, ambiguous problems and systems
