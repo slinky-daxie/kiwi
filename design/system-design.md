@@ -38,6 +38,7 @@ An LLM-powered agent-assistance system that:
 3. **Explainability by default**
 4. **Conservative start, gradual autonomy**
 5. **Continuous learning from human decisions**
+6. **Built to scale and reuse** (platform architecture)
 
 ### System Flow Overview
 
