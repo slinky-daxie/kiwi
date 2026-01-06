@@ -1,21 +1,21 @@
-# Ideation on Kiwi and Customer Support
+# Ideation on Pineapple Travel and Customer Support
 
-## Kiwi's USP
+## Pineapple Travel's USP
 
-Kiwi is an OTA, but not a traditional one.
+Pineapple Travel is an OTA, but not a traditional one.
 
 What makes it different?:
 
 - Focus on routing and price discovery rather than airline partnerships
 - Ability to combine flights across non-partner airlines using virtual interlining
 - Willingness to take on complexity in exchange for better prices and flexibility for customers
-    - **Think about Travix:** Global ticketing offices, making savings by taking booking in Netherlands, routing through AU office to obtain cheaper price than advised to customer (and Travix would take the difference). What does Kiwi do? Pass to customer? How does Kiwi make money, the guarantee?
+    - **Think about Travix:** Global ticketing offices, making savings by taking booking in Netherlands, routing through AU office to obtain cheaper price than advised to customer (and Travix would take the difference). What does Pineapple Travel do? Pass to customer? How does Pineapple Travel make money, the guarantee?
     - Offers a guarantee to fix any carrier related problems for X cost - if the customer does not buy the guarantee do they accept the risk?
 
 Probably causes above “normal” downstream problems:
 
 - Missed connections that no airline “owns”
-- Ambiguity around responsibility - who owns the risk, the customer (without the kiwi guarantee?)
+- Ambiguity around responsibility - who owns the risk, the customer (without the Pineapple guarantee?)
 - Complexity when trying to resolve for customers and CS staff (large CS team? long queues?)
 - A constant trade-off between cost, speed, and customer trust
     - **Think of Skyscanner - accuracy vs coverage vs speed AND vs cost vs customer trust balancing act?**
@@ -23,7 +23,7 @@ Probably causes above “normal” downstream problems:
 
 Customer Support is central to keeping customers happy when things go wrong in a high risk virtual interlining travel agency.
 
-## CS PM Role at Kiwi
+## CS PM Role at Pineapple Travel
 
 - Product strategy
 - New tech / power of Gen AI / Agents
@@ -56,7 +56,7 @@ What stands out to me in the JD:
 
 ## (Imaginary) Problem Summary
 
-Kiwi’s USP delivers amazing savings for users, but also creates unavoidable failure scenarios.
+Pineapple Travel's USP delivers amazing savings for users, but also creates unavoidable failure scenarios.
 
 The problem is not the failures themselves, but how (potentially) inconsistently, expensively, and opaquely they are resolved.
 
@@ -64,17 +64,17 @@ How might we improve the quality, speed, and consistency of customer support dec
 
 ## Exploration of Agentic AI System for Resolving Interlining Failures
 
-Given Kiwi’s USP, a large share of customer support complexity comes from **things going wrong in itineraries that no single airline fully owns**.
+Given Pineapple Travel's USP, a large share of customer support complexity comes from **things going wrong in itineraries that no single airline fully owns**.
 
 Out of scope: Other customer service issues (baggage, seats, etc)
 
-Why this problem? It’s a problem specific to Kiwi, less general OTA problem.
+Why this problem? It's a problem specific to Pineapple Travel, less general OTA problem.
 
 I am going to explore an agent-assisted system that:
 
-- Detects failure scenarios in virtual interlining journeys, looking for problems before the customer contacts Kiwi and categorises (if customer first contact, then categorise)
+- Detects failure scenarios in virtual interlining journeys, looking for problems before the customer contacts Pineapple Travel and categorises (if customer first contact, then categorise)
 - Gathers all relevant context automatically: flight status, connection time, ticket conditions, guarantee eligibility, historical outcomes
-- Produces ranked resolution options that are all valid within Kiwi’s policies for example: rebooking, refund, partial compensation, or mixed solutions
+- Produces ranked resolution options that are all valid within Pineapple Travel's policies for example: rebooking, refund, partial compensation, or mixed solutions
 - Explains why each option is recommended
 - When confidence is high enough to act automatically, auto resolution OR human intervention required (give customer override also?)
     - Confidence boundaries OR **decision boundaries**, not automation:

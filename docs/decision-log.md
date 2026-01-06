@@ -1,6 +1,6 @@
 # LLM Architecture Decision Log
 
-*Agent-Assisted Customer Support System for Kiwi.com*
+*Agent-Assisted Customer Support System for Pineapple Travel*
 
 This document records all major LLM and AI architecture decisions, including rationale, alternatives considered, and trade-offs.
 
@@ -110,7 +110,7 @@ Use **Claude 3.5 Sonnet** as primary reasoning engine.
 **Status**: Proposed for MVP
 
 ### Context
-Need to incorporate Kiwi's policies, guarantee terms, historical cases, and airline rules into LLM decision-making.
+Need to incorporate Pineapple Travel's policies, guarantee terms, historical cases, and airline rules into LLM decision-making.
 
 ### Decision
 Use **RAG (Retrieval-Augmented Generation)** in MVP, defer fine-tuning to Phase 2.
@@ -182,7 +182,7 @@ Use **open-source embedding model** (bge-large-en-v1.5 or gte-large) hosted inte
    - Why not chosen: Open-source eliminates these issues
 
 3. **Train custom embeddings**
-   - Pros: Optimized for Kiwi domain
+   - Pros: Optimized for Pineapple Travel domain
    - Cons: Need training data, expertise, time
    - Why not chosen: Premature—use off-the-shelf first
 
@@ -404,7 +404,7 @@ Implement **three-tier confidence system**:
 **Status**: Proposed for MVP
 
 ### Context
-LLM needs to generate resolution options that comply with Kiwi's policies, guarantee terms, and legal requirements. Need to decide how to enforce these rules.
+LLM needs to generate resolution options that comply with Pineapple Travel's policies, guarantee terms, and legal requirements. Need to decide how to enforce these rules.
 
 ### Decision
 Use **prompt-injected rule book** where policies and compliance rules are passed as part of the system prompt to Claude Sonnet, rather than hard-coded validation logic.

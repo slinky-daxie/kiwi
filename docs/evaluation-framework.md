@@ -289,7 +289,7 @@ How satisfied were you with the resolution of your recent issue?
 
 #### 4. Resolution Cost
 
-**Definition**: Average cost to Kiwi per resolution
+**Definition**: Average cost to Pineapple Travel per resolution
 
 **Components**:
 - Rebooking fees

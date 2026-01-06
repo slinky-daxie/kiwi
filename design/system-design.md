@@ -1,6 +1,6 @@
 # System Design: Agent-Assisted CS Resolution System
 
-*Agent-assisted customer support system for virtual interlining failure resolution at Kiwi.com*
+*Agent-assisted customer support system for virtual interlining failure resolution at Pineapple Travel*
 
 ---
 
@@ -18,7 +18,7 @@
 ## Overview
 
 ### Problem Statement
-Kiwi's virtual interlining creates complex failure scenarios (missed connections, schedule changes) where:
+Pineapple Travel's virtual interlining creates complex failure scenarios (missed connections, schedule changes) where:
 - No single airline owns the problem
 - Responsibility is ambiguous
 - Resolutions are inconsistent and slow
@@ -225,7 +225,7 @@ flowchart TB
 
 **Integration Points**:
 - FlightAware / FlightStats API (polling every 5 min for active bookings)
-- Kiwi booking system (webhooks on changes)
+- Pineapple Travel booking system (webhooks on changes)
 - Customer service platform (chat/email webhooks)
 
 ---
@@ -387,7 +387,7 @@ affected_bookings = booking_db.query(
   "relevant_policies": [
     {
       "policy_id": "POL_001",
-      "title": "Kiwi Guarantee - Missed Connections",
+      "title": "Pineapple Guarantee - Missed Connections",
       "content": "...",
       "relevance_score": 0.94
     }
@@ -407,7 +407,7 @@ affected_bookings = booking_db.query(
 #### Policy Knowledge Base
 
 **Structure**:
-- Kiwi Guarantee terms (chunked by section)
+- Pineapple Guarantee terms (chunked by section)
 - Refund policies (by scenario)
 - Airline partner rules
 - Legal requirements (EU261, etc)
@@ -438,16 +438,16 @@ affected_bookings = booking_db.query(
 
 **Rule Book Structure**:
 ```markdown
-# Kiwi Customer Support Rule Book v1.0
+# Pineapple Travel Customer Support Rule Book v1.0
 
 ## RULE-001: Guarantee Coverage - Missed Connections
-IF customer purchased Kiwi Guarantee AND missed connection due to first flight delay
-THEN Kiwi must provide rebooking at no additional cost to customer
+IF customer purchased Pineapple Guarantee AND missed connection due to first flight delay
+THEN Pineapple Travel must provide rebooking at no additional cost to customer
 CITATION: Guarantee Terms Section 3.2
 
 ## RULE-002: Weather Delays - Airline Responsibility
 IF delay caused by weather AND customer has not purchased Guarantee
-THEN airline is responsible, NOT Kiwi (refer to airline policy)
+THEN airline is responsible, NOT Pineapple Travel (refer to airline policy)
 CITATION: Terms of Service Section 5.1
 
 ## RULE-003: Refund Limits Without Guarantee
@@ -474,7 +474,7 @@ CITATION: Refund Policy Section 2.3
 
 **Prompt Structure**:
 ```
-You are an expert customer support agent for Kiwi.com, specializing in 
+You are an expert customer support agent for Pineapple Travel, specializing in 
 resolving complex virtual interlining failures.
 
 RULE BOOK (YOU MUST FOLLOW THESE RULES):
@@ -493,11 +493,11 @@ TASK:
 Generate 2-4 resolution options ranked by:
 1. Customer satisfaction (prioritize their needs)
 2. Policy compliance (MUST be valid per rules above)
-3. Cost to Kiwi (lower is better, but don't compromise #1)
+3. Cost to Pineapple Travel (lower is better, but don't compromise #1)
 
 For each option provide:
 - Specific actions to take
-- Expected cost to Kiwi
+- Expected cost to Pineapple Travel
 - Expected customer satisfaction
 - Policy justification (cite specific RULE-XXX)
 - Pros and cons
@@ -521,7 +521,7 @@ Format your response as JSON following this schema:
         "Provide lounge access voucher",
         "Send SMS with new itinerary"
       ],
-      "cost_to_kiwi": {
+      "cost_to_pineapple": {
         "amount": 125.00,
         "currency": "EUR",
         "breakdown": {
@@ -535,7 +535,7 @@ Format your response as JSON following this schema:
           "rule_id": "RULE-001",
           "policy_id": "POL_001",
           "section": "3.2 Weather-Related Delays",
-          "quote": "Kiwi will rebook on next available flight..."
+          "quote": "Pineapple Travel will rebook on next available flight..."
         }
       ],
       "pros": [
@@ -544,7 +544,7 @@ Format your response as JSON following this schema:
         "Similar to past successful resolutions"
       ],
       "cons": [
-        "Cost to Kiwi",
+        "Cost to Pineapple Travel",
         "4-hour delay for customer"
       ],
       "confidence": 89,
@@ -566,7 +566,7 @@ Format your response as JSON following this schema:
         "Provide flight search assistance",
         "Offer €50 voucher for future booking"
       ],
-      "cost_to_kiwi": {
+      "cost_to_pineapple": {
         "amount": 365.00,
         "currency": "EUR",
         "breakdown": {
@@ -842,7 +842,7 @@ sequenceDiagram
 | System | Purpose | Protocol | SLA |
 |--------|---------|----------|-----|
 | FlightAware | Real-time flight status | REST API | 99.9% uptime |
-| Kiwi Booking System | Booking data, modifications | Internal API | 99.95% uptime |
+| Pineapple Travel Booking System | Booking data, modifications | Internal API | 99.95% uptime |
 | Airline APIs | Rebooking, availability | REST/SOAP | Varies by airline |
 | Payment Gateway | Refund processing | REST API | 99.9% uptime |
 | Customer Service Platform | Chat, email, SMS | Webhooks + API | 99.5% uptime |

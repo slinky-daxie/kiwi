@@ -1,12 +1,12 @@
 # Build Plan: Agent-Assisted CS System
 
-*Phased implementation approach for Kiwi interview project*
+*Phased implementation approach for Pineapple Travel project*
 
 ---
 
 ## Overview
 
-**Goal**: Demonstrate PM thinking + technical depth for Principal CS PM interview (January 7, 2026)
+**Goal**: Demonstrate PM thinking + technical depth for Principal CS PM role
 
 **Philosophy**: Start simple, prove value, iterate based on learning
 
@@ -77,8 +77,8 @@
 
 ### Phase 2: If I Get the Job (Weeks 1-4)
 
-**Real MVP with Kiwi team**:
-- Integrate with real Kiwi booking system
+**Real MVP with Pineapple Travel team**:
+- Integrate with real Pineapple Travel booking system
 - Connect to flight status APIs
 - Deploy to staging environment
 - Run shadow mode (collect data, don't show to agents)
@@ -123,7 +123,7 @@
 - [ ] Test basic LangFlow flow
 
 **Evening: Policy KB**
-- [ ] Extract Kiwi Guarantee terms (from research)
+- [ ] Extract Pineapple Guarantee terms (from research)
 - [ ] Create 5-10 sample policy documents
 - [ ] Chunk policies (by section)
 - [ ] Generate embeddings
@@ -232,7 +232,7 @@ Flights:
   - EI456 (Dublin → Paris) - Departed on time, MISSED
 Current Time: 14:30
 Next available: EI789 (18:00) or AF234 (20:30)
-Kiwi Guarantee: Purchased (✅)
+Pineapple Guarantee: Purchased (✅)
 Customer value: €450 booking, standard tier
 ```
 
@@ -258,8 +258,8 @@ Flights:
   - IB901 (Madrid → Rome) - Cancelled by airline
   - AZ102 (Rome → Athens) - Still valid
 Departure: Tomorrow (18h from now)
-Kiwi Guarantee: NOT purchased
-Customer value: €280 booking, 3rd booking with Kiwi
+Pineapple Guarantee: NOT purchased
+Customer value: €280 booking, 3rd booking with Pineapple Travel
 ```
 
 **Expected LLM Output**:
@@ -283,7 +283,7 @@ Booking: KW112233
 Issue: Name misspelled (Jonson vs Johnson) in booking
 Flight: BA567 (London → Barcelona)
 Departure: 14 days from now
-Kiwi Guarantee: Purchased
+Pineapple Guarantee: Purchased
 Customer value: €120 booking, new customer
 ```
 
@@ -309,7 +309,7 @@ Issue:
   - Missed Flight 2 (JL234)
   - Luggage is on JL234 (heading to Sydney without her)
   - Hotel reservation in Sydney for tonight (non-refundable)
-Kiwi Guarantee: Purchased
+Pineapple Guarantee: Purchased
 Customer value: €1,850 booking, Gold tier (15 previous bookings)
 ```
 
@@ -369,7 +369,7 @@ Local development:
 ## Demo Flow (5 Minutes)
 
 ### Minute 1: Context Setting (Talking)
-- "Kiwi's virtual interlining creates complex failures"
+- "Pineapple Travel's virtual interlining creates complex failures"
 - "Current CS: slow, inconsistent, opaque"
 - "My solution: Agent-assisted system with LLMs"
 - "Let me show you how it works"
@@ -412,7 +412,7 @@ Local development:
 │ The Problem                               │
 ├───────────────────────────────────────────┤
 │                                           │
-│ Kiwi's USP (virtual interlining)          │
+│ Pineapple Travel's USP (virtual interlining)          │
 │        ↓                                  │
 │ Creates complex failures                  │
 │        ↓                                  │
@@ -497,7 +497,7 @@ Local development:
 ## Talking Points (For Interview)
 
 ### Why This Problem?
-- "Specific to Kiwi's model (virtual interlining)"
+- "Specific to Pineapple Travel's model (virtual interlining)"
 - "Not a generic chatbot - solves real pain from research"
 - "Aligns with JD: AI-powered support, daily releases, high impact"
 
@@ -588,7 +588,7 @@ Local development:
 ## Post-Interview (If Interested in Continuing)
 
 ### If Offer Extended
-- Discuss: What's Kiwi's current CS tech stack?
+- Discuss: What's Pineapple Travel's current CS tech stack?
 - Understand: Where does this fit in their roadmap?
 - Negotiate: Timeline, resources, team support
 
@@ -615,8 +615,8 @@ docker run -p 6333:6333 qdrant/qdrant
 
 ### React App Setup
 ```bash
-npm create vite@latest kiwi-demo -- --template react-ts
-cd kiwi-demo
+npm create vite@latest pineapple-demo -- --template react-ts
+cd pineapple-demo
 npm install
 npm install tailwindcss axios react-query
 npm run dev

@@ -6,7 +6,7 @@
 
 ## Vision
 
-Transform Kiwi's customer support from reactive problem-solving to proactive, AI-powered travel assistance that:
+Transform Pineapple Travel's customer support from reactive problem-solving to proactive, AI-powered travel assistance that:
 - **Resolves issues** before customers notice them
 - **Builds trust** through transparency and education
 - **Reduces costs** through intelligent automation
@@ -119,7 +119,7 @@ Customer viewing itinerary with 55min connection time:
 ┌─────────────────────────────────────────┐
 │ 🤔 Is this connection risky?            │
 │                                         │
-│ ✅ Kiwi Guarantee recommended (+€8)    │
+│ ✅ Pineapple Guarantee recommended (+€8)    │
 │                                         │
 │ Why? Short connection (55min) at busy  │
 │ airport. Historical success: 78%.       │
@@ -135,7 +135,7 @@ Flight delayed detected:
 ┌─────────────────────────────────────────┐
 │ Your flight BA123 is delayed 45min     │
 │                                         │
-│ ✅ You have Kiwi Guarantee              │
+│ ✅ You have Pineapple Guarantee              │
 │ ✅ Connection still possible (70% conf) │
 │                                         │
 │ If you miss connection, we'll:          │
@@ -186,7 +186,7 @@ Planning a trip? Check coverage:
 → Shows: Guarantee coverage, typical resolution time, cost
 
 "What if the airline cancels my flight?"
-→ Shows: Airline vs Kiwi responsibility, EU261 rights, options
+→ Shows: Airline vs Pineapple Travel responsibility, EU261 rights, options
 
 "What if I need to change my booking?"
 → Shows: Change fees, flexibility options, cost breakdown
@@ -244,7 +244,7 @@ You're booking: LHR → CDG → BCN
 │ Historical success rate: 73%             │
 │                                          │
 │ Recommendations:                         │
-│ ✅ Add Kiwi Guarantee (+€8)             │
+│ ✅ Add Pineapple Guarantee (+€8)             │
 │ 🔄 See safer alternatives (+45min)      │
 └─────────────────────────────────────────┘
 ```
@@ -445,7 +445,7 @@ Customer message: "This is the THIRD TIME my flight is cancelled!!! I have a wed
 
 #### 1. White-Label Solution for OTAs
 
-**Product**: "Kiwi Intelligence Platform"
+**Product**: "Pineapple Intelligence Platform"
 - Package the CS automation system
 - Sell to other online travel agencies
 - Customizable for their policies/branding
@@ -486,7 +486,7 @@ Insurance company uses API:
 **Collaboration Model**:
 - Share disruption data (anonymized) with partner airlines
 - Airlines get early warning of cascading delays
-- Kiwi gets priority rebooking access
+- Pineapple Travel gets priority rebooking access
 - Win-win: Better outcomes for shared customers
 
 ### Industry Leadership
@@ -502,7 +502,7 @@ Insurance company uses API:
 - Ethical AI in travel standards
 
 **Benefit**:
-- Position Kiwi as industry leader
+- Position Pineapple Travel as industry leader
 - Attract top talent (working on cutting-edge)
 - Partnerships with research institutions
 - Speaking opportunities at conferences
@@ -541,23 +541,23 @@ Insurance company uses API:
 
 1. **Proactive, Not Reactive**
    - Industry standard: Wait for customer complaint
-   - Kiwi approach: Detect and resolve before complaint
+   - Pineapple Travel approach: Detect and resolve before complaint
 
 2. **Transparent AI**
    - Industry standard: Black box automation
-   - Kiwi approach: Explainable decisions, cited rules, customer education
+   - Pineapple Travel approach: Explainable decisions, cited rules, customer education
 
 3. **Human-AI Partnership**
    - Industry standard: Replace humans OR ignore AI
-   - Kiwi approach: Augment humans, gradual autonomy based on trust
+   - Pineapple Travel approach: Augment humans, gradual autonomy based on trust
 
 4. **Customer-First Data Use**
    - Industry standard: Use data to minimize cost
-   - Kiwi approach: Use data to minimize customer stress
+   - Pineapple Travel approach: Use data to minimize customer stress
 
 5. **Platform Thinking**
    - Industry standard: Build for internal use only
-   - Kiwi approach: Build once, leverage everywhere (CS + customer-facing + B2B)
+   - Pineapple Travel approach: Build once, leverage everywhere (CS + customer-facing + B2B)
 
 ---
 
@@ -689,7 +689,7 @@ Insurance company uses API:
 - Builds organizational confidence in AI
 
 ### Long-Term Success (Phase 5)
-- Kiwi becomes industry leader in AI-powered travel support
+- Pineapple Travel becomes industry leader in AI-powered travel support
 - Customer experience differentiation drives market share
 - Platform revenue creates new business line
 - Sets industry standards for responsible AI use

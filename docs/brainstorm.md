@@ -1,10 +1,10 @@
-# Brainstorming Session: Agent-Assisted CS System for Kiwi
+# Brainstorming Session: Agent-Assisted CS System for Pineapple Travel
 *Date: January 1, 2026*
 
 
 ## Context
 
-Building an agent-assisted system for resolving virtual interlining failures at Kiwi.com. The system will augment (not replace) human CS agents, focusing on:
+Building an agent-assisted system for resolving virtual interlining failures at Pineapple Travel. The system will augment (not replace) human CS agents, focusing on:
 - Missed connections on self-transfer itineraries
 - Schedule changes and cancellations
 - Complex multi-airline failures
@@ -37,7 +37,7 @@ A: **Both**:
 ### Context Gathering
 
 **Data sources**:
-- Booking data: Kiwi's internal database
+- Booking data: Pineapple Travel's internal database
 - Flight status: Third-party APIs (FlightAware, OAG)
 - Policy knowledge base: Internal docs (Guarantee terms, refund policies)
 - Historical resolutions: Support ticket system
@@ -178,7 +178,7 @@ A: **Both**:
 ## RAG Architecture Details
 
 **Why RAG for this use case?**
-- Kiwi's policies are complex and change frequently
+- Pineapple Travel's policies are complex and change frequently
 - Historical resolutions are valuable (similar cases)
 - Need explainability (can cite sources)
 - Can update knowledge without retraining

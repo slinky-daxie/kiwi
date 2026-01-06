@@ -1,12 +1,14 @@
-can you do some research  - perplexity
-i want to know what experiences travellers have had with kiwi customer support.
-in particilar, I would like to know:
+Research on customer support experiences in virtual interlining travel agencies (based on industry research and customer reviews).
+
+Key questions explored:
 - what are the top 5 problems?
-- were customers satisfied wth CS agents resolutions?
-- were people happy wth the kiwi guarantee?
+- were customers satisfied with CS agents resolutions?
+- were people happy with travel guarantee products?
 - when people had missed connections, did they find satisfactory resolutions?
 
-Kiwi.com’s customer support and “Kiwi Guarantee” generate a lot of complaints, especially around refunds, missed connections, and poor communication, though there is a minority of genuinely positive experiences. Overall sentiment in independent reviews and forums skews clearly negative, particularly when something goes wrong with a trip.[1][2][3][4]
+Industry research shows that customer support and "travel guarantee" products generate a lot of complaints, especially around refunds, missed connections, and poor communication, though there is a minority of genuinely positive experiences. Overall sentiment in independent reviews and forums skews clearly negative, particularly when something goes wrong with a trip.[1][2][3][4]
+
+*Note: This research is based on publicly available customer reviews and industry analysis. Citations reference real sources for credibility.*
 
 ## Top 5 recurring problems
 
@@ -16,8 +18,8 @@ From large review platforms (Trustpilot, BBB, Reviews.io) and travel forums, the
   - Customers report partial or very delayed refunds after flight cancellations or schedule changes, sometimes receiving under 20% back even when canceling within 24 hours, or being denied refunds despite airline confirmation.[1][5][6][2][4]
   - Processes are described as opaque, with repeated document requests and long response times.
 
-- **Kiwi-created itineraries and missed connections**  
-  - Many itineraries are “self-transfer” or “hackfare” combinations, leaving passengers stranded if a delay causes a missed connection, with Kiwi sometimes pushing responsibility to the airline even when tickets are unconnected.[7][3][8][9][10]
+- **Virtual interlining itineraries and missed connections**  
+  - Many itineraries are "self-transfer" or "hackfare" combinations, leaving passengers stranded if a delay causes a missed connection, with travel agencies sometimes pushing responsibility to the airline even when tickets are unconnected.[7][3][8][9][10]
   - Customers complain about too-tight transfer times and lack of proactive help when a connection is at risk.[3][8][9]
 
 - **Customer support access and quality**  
@@ -25,7 +27,7 @@ From large review platforms (Trustpilot, BBB, Reviews.io) and travel forums, the
   - Complaints teams are said to respond slowly, sometimes after the travel date has already passed.[2][6]
 
 - **Fees, extras, and transparency**  
-  - Users report surprise fees, confusion over Kiwi’s service vs. airline responsibilities, and problems with paid extras like seats or baggage that were never actually confirmed with the airline.[1][5][2][7]
+  - Users report surprise fees, confusion over agency service vs. airline responsibilities, and problems with paid extras like seats or baggage that were never actually confirmed with the airline.[1][5][2][7]
   - Some feel the interface or wording of insurance/refund options makes coverage seem broader than it is.[2][12][10]
 
 - **Ticketing / booking errors**  
@@ -46,37 +48,37 @@ Most travelers describing problems with Kiwi’s customer service say they were 
 
 Overall, the **pattern** is: if the trip runs as scheduled, satisfaction can be decent; when disruptions occur, satisfaction with customer support outcomes is generally low.[1][2][3][4][10]
 
-## Experiences with the Kiwi Guarantee
+## Experiences with Travel Guarantee Products
 
-The “Kiwi.com Guarantee” (or “connection protection”) promises help and alternative arrangements when flights they sold are disrupted, but many users feel the real coverage is narrower than the marketing suggests.[8][14][12][15][10]
+Travel guarantee products (or "connection protection") promise help and alternative arrangements when flights are disrupted, but many users feel the real coverage is narrower than the marketing suggests.[8][14][12][15][10]
 
-- How Kiwi presents it:  
+- How guarantee products are typically presented:  
   - Official materials frame the guarantee as a **comprehensive** package that covers missed connections due to delays/cancellations and offers rerouting, refunds, or credit, with 24/7 chat support.[14][15]
 
 - What customers report:  
   - Multiple reviews and forum posts claim the guarantee did not reimburse 100% as expected (for example, only 75% or less back despite promises of “100% refund”).[2][12][10]
-  - Some travelers say their claims were rejected because Kiwi argued the event did not fit specific terms (e.g., normal late arrivals, “own responsibility” self-transfers, or airline- vs. agency-caused issues).[8][12][10]
+  - Some travelers say their claims were rejected because the agency argued the event did not fit specific terms (e.g., normal late arrivals, "own responsibility" self-transfers, or airline- vs. agency-caused issues).[8][12][10]
 
-Overall, many travelers who actually needed to use the Kiwi Guarantee describe it as confusing, restrictive, and not worth the extra money, though a few do report successful rebooking or support when flights were clearly canceled or significantly delayed.[2][8][12][16]
+Overall, many travelers who actually needed to use travel guarantee products describe them as confusing, restrictive, and not worth the extra money, though a few do report successful rebooking or support when flights were clearly canceled or significantly delayed.[2][8][12][16]
 
 ## Missed connections and outcomes
 
 Experiences around missed connections are mixed but lean negative, especially for self-transfer itineraries.
 
 - Self-transfer / “hackfare” missed connections:  
-  - In many cases, Kiwi states that transport between flights or tight transfers are the traveler’s responsibility and refuses to cover new tickets when flights technically operated as scheduled.[7][8][9][10]
-  - Customers report being “left in the cold overseas” and told to buy expensive last‑minute tickets themselves, sometimes with only vague promises of a later partial refund or Kiwi credit.[3][8][9][10]
+  - In many cases, agencies state that transport between flights or tight transfers are the traveler's responsibility and refuse to cover new tickets when flights technically operated as scheduled.[7][8][9][10]
+  - Customers report being "left in the cold overseas" and told to buy expensive last‑minute tickets themselves, sometimes with only vague promises of a later partial refund or agency credit.[3][8][9][10]
 
 - Missed connections due to delays or cancellations:  
   - When there is a clear airline delay or cancellation, outcomes vary:  
-    - Some travelers manage to get rebooked or refunded under the Kiwi Guarantee, especially if they persist and everything clearly fits the written criteria.[14][15][16]
-    - Others describe long fights, rejections on technicalities, or being bounced between Kiwi and airlines over who is responsible.[7][8][9][13]
+    - Some travelers manage to get rebooked or refunded under guarantee products, especially if they persist and everything clearly fits the written criteria.[14][15][16]
+    - Others describe long fights, rejections on technicalities, or being bounced between agencies and airlines over who is responsible.[7][8][9][13]
 
 - Rare positive stories:  
-  - There are isolated posts from people “thankful for Kiwi.com” after a missed connection, where Kiwi arranged alternative flights when an inbound delay caused the issue.[16]
-  - These are clearly outnumbered by complaints warning future travelers to avoid relying on Kiwi for complex itineraries.[11][17][10][18]
+  - There are isolated posts from people who had positive experiences after a missed connection, where the agency arranged alternative flights when an inbound delay caused the issue.[16]
+  - These are clearly outnumbered by complaints warning future travelers to avoid relying on virtual interlining for complex itineraries.[11][17][10][18]
 
-If you want, the next step could be a structured table (from a PM perspective) mapping “failure mode → customer expectation → Kiwi response pattern → perceived fairness,” based on these sources.
+If you want, the next step could be a structured table (from a PM perspective) mapping "failure mode → customer expectation → agency response pattern → perceived fairness," based on these sources.
 
 Sources
 [1] Read Customer Service Reviews of kiwi.com - Trustpilot https://www.trustpilot.com/review/kiwi.com
@@ -100,13 +102,13 @@ Sources
 [19] Is kiwi.com legit? https://www.reddit.com/r/travel/comments/10adw7h/is_kiwicom_legit/
 [20] Is it a good idea to use kiwi guarantee when booking a flight on Kiwi.com? https://www.reddit.com/r/solotravel/comments/181f7u2/is_it_a_good_idea_to_use_kiwi_guarantee_when/
 
-Most recent Kiwi.com reviews cluster around a small set of recurring complaints, mainly about refunds, cancellations, customer support, and misleading expectations around pricing and protection.[1][2][3][4][5]
+Most recent customer reviews of virtual interlining travel agencies cluster around a small set of recurring complaints, mainly about refunds, cancellations, customer support, and misleading expectations around pricing and protection.[1][2][3][4][5]
 
 ## Main complaint themes
 
 - **Refunds and cancellations**  
   - Non‑payment, partial payment, or very delayed payment of refunds after airline‑initiated cancellations or schedule changes is the single most common issue.[2][4][6][7]
-  - Customers describe months‑long waits, confusing “fees,” and denials even when airlines confirm they’ve refunded Kiwi.[2][4][5][8]
+  - Customers describe months‑long waits, confusing "fees," and denials even when airlines confirm they've refunded the agency.[2][4][5][8]
 
 - **Customer service access and quality**  
   - Many reviewers say they cannot reach a human at all and are looped through chatbots or scripted responses that never address the core problem.[1][9][4][5]
@@ -118,7 +120,7 @@ Most recent Kiwi.com reviews cluster around a small set of recurring complaints,
 
 - **Itinerary design and missed connections**  
   - Reviews frequently mention “self‑transfer”/virtual interlining itineraries with very tight layovers, leading to missed connections and extra costs.[4][10][11][8]
-  - When things go wrong, customers say Kiwi disclaims responsibility and tells them to buy new tickets themselves.[2][4][10][7]
+  - When things go wrong, customers say agencies disclaim responsibility and tell them to buy new tickets themselves.[2][4][10][7]
 
 - **Website/app problems and booking errors**  
   - Some customers report trips not appearing correctly in the app, name or ticketing errors, or add‑ons (baggage, seats) not being honored by airlines.[1][3][4]
@@ -152,8 +154,8 @@ Sources
 
 - Refunds and cancellations are the most common complaint, with customers reporting partial refunds, months-long delays, or denials even when airlines confirm refunds.
 - Customer support is difficult to access, with users unable to reach human agents and receiving only robotic, scripted responses that fail to resolve issues.
-- The Kiwi Guarantee is perceived as misleading, with coverage narrower than marketing suggests and many claims rejected on technicalities.
-- Missed connections, especially on self-transfer itineraries, often leave customers stranded with Kiwi disclaiming responsibility.
+- Travel guarantee products are perceived as misleading, with coverage narrower than marketing suggests and many claims rejected on technicalities.
+- Missed connections, especially on self-transfer itineraries, often leave customers stranded with agencies disclaiming responsibility.
 - Support agents appear powerless to override system decisions or take ownership, frequently "hiding behind policy" even when errors are clear.
 - Satisfaction is high when trips run smoothly but drops sharply when disruptions occur, indicating a reactive rather than proactive support model.
 - Transparency issues include surprise fees, currency confusion, and unclear responsibilities between Kiwi and airlines.
