@@ -560,19 +560,46 @@ Scalability isn't just about technical performance - it's about **maintaining qu
 
 ## Future Enhancements
 
-### Phase 2: Selective Autonomy
-- Auto-execute high-confidence (>0.95) rebookings after customer approval
-- Proactive customer communication ("We've found an alternative...")
-- Predictive rebooking (before customer notices issue)
+### Selective Automation
+- Auto-execute high-confidence (>95%) resolutions after customer approval
+- Reduces agent workload for straightforward cases
+- Requires proven accuracy and trust from MVP phase
 
-### Phase 3: Advanced Features
-- Multi-language support (translate policies, generate responses)
-- Sentiment analysis for escalation (detect frustrated customers)
-- Personalization (learn customer preferences)
-- Predictive analytics (identify failure-prone itineraries at booking time)
+### Customer-Facing Transparency
+- **Guarantee Explainer Bot**: Reuse RAG stack for customer self-service
+  - Pre-purchase: "Does this trip qualify? What's covered?"
+  - During trip: "Does my guarantee cover this delay?"
+  - Post-issue: "Why was my claim handled this way?"
+- Directly addresses research finding: "customers say guarantee covers nothing"
+- Increases guarantee attachment through education, not manipulation
+- Same infrastructure, new use case (platform thinking)
 
-### Phase 4: Ecosystem Integration
-- Share resolution patterns with airline partners
-- Industry-wide knowledge base (anonymized)
-- API for third-party travel insurance providers
+### Proactive Resolution
+- Contact customers before they contact us
+- System detects issue → generates options → notifies customer proactively
+- Transforms "left stranded in airports" into "we're already working on it"
+
+### Predictive Features
+- Risk scoring at booking time (show customers what they're getting into)
+- Pre-emptive rebooking suggestions before disruptions fully materialise
+- Smart routing recommendations (balance price, risk, convenience)
+- Shift from reactive problem-solving to proactive prevention
+
+### Fine-Tuned Model Evaluation
+- Assess if custom fine-tuned model outperforms current RAG + hosted LLM approach
+- Would require sufficient labeled data from MVP decisions
+- Compare on quality, cost, latency, and operational complexity
+- Consider for specific high-volume tasks (e.g., classification) first
+
+### Advanced AI Capabilities
+- Multi-language support (translate policies, generate localised responses)
+- Sentiment analysis for intelligent escalation
+- Personalization engine (learn customer preferences over time)
+- Multi-agent orchestration (specialized agents for negotiation, context enrichment)
+
+### Ecosystem & Platform
+- White-label solution for other OTAs
+- API for travel insurance companies (risk scoring, claim validation)
+- Partner airline integration (shared data, priority rebooking)
+- Industry knowledge sharing (position as thought leader)
 
