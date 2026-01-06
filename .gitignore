@@ -6,3 +6,7 @@ dist/
 build/
 .vscode/
 .idea/
+
+# LangFlow implementation notes (personal)
+langflow.md
+chroma_db/

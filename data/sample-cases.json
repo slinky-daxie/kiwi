@@ -1,0 +1,155 @@
+[
+  {
+    "case_id": "CASE-001",
+    "booking_id": "PN-1847392",
+    "customer_name": "Sarah Chen",
+    "scenario": "Missed connection - customer in airport",
+    "urgency": "URGENT",
+    "description": "First flight (BA284) delayed 90 minutes due to air traffic control. Customer arrived at BKK but missed TG401 connection to Sydney. Currently in Bangkok airport.",
+    "customer_message": "I just missed my connecting flight to Sydney because BA was delayed. I'm stuck in Bangkok airport and my flight left 20 minutes ago. I have the guarantee - can you help me?",
+    "context": {
+      "current_time": "2026-01-16T18:50:00Z",
+      "customer_location": "BKK airport",
+      "delay_cause": "air_traffic_control",
+      "guarantee_status": "active",
+      "time_critical": true
+    },
+    "expected_resolution": "Rebook on next available BKK-SYD flight within 12 hours. Provide hotel if overnight wait. Full guarantee coverage applies.",
+    "complexity": "medium"
+  },
+  {
+    "case_id": "CASE-002",
+    "booking_id": "PN-1923847",
+    "customer_name": "James Murphy",
+    "scenario": "Flight delay - EU261 eligible",
+    "urgency": "HIGH",
+    "description": "Lufthansa flight delayed 3 hours due to technical issue. Customer wants to know rights and options.",
+    "customer_message": "My flight LH400 from Frankfurt to New York is delayed by 3 hours. The airline says it's a technical problem. Am I entitled to any compensation? I need to get to an important meeting.",
+    "context": {
+      "current_time": "2026-01-20T08:30:00Z",
+      "customer_location": "FRA airport",
+      "delay_cause": "technical_issue",
+      "guarantee_status": "none",
+      "eu261_eligible": true,
+      "time_critical": false
+    },
+    "expected_resolution": "Inform customer of EU261 rights: €600 compensation from airline. No Pineapple guarantee but can assist with claim. Offer rebooking if customer prefers alternative flight.",
+    "complexity": "low"
+  },
+  {
+    "case_id": "CASE-003",
+    "booking_id": "PN-1847621",
+    "customer_name": "Priya Patel",
+    "scenario": "Flight cancellation - VIP customer",
+    "urgency": "URGENT",
+    "description": "Emirates cancelled EK7 due to operational reasons. Customer will miss BA308 connection to JFK. Platinum tier customer, high value.",
+    "customer_message": "Emirates just cancelled my Dubai to London flight (EK7). This means I'll miss my connection to New York and I have critical meetings tomorrow. I'm a platinum member and this is unacceptable. What are you going to do about this?",
+    "context": {
+      "current_time": "2026-01-11T22:00:00Z",
+      "customer_location": "DXB airport",
+      "cancellation_cause": "airline_operational",
+      "guarantee_status": "premium",
+      "customer_tier": "platinum",
+      "vip": true,
+      "time_critical": true
+    },
+    "expected_resolution": "Priority rebooking on next available DXB-LHR-JFK routing. Consider direct DXB-JFK if available. VIP handling with manager approval. Compensation voucher. Update customer within 30 minutes.",
+    "complexity": "high"
+  },
+  {
+    "case_id": "CASE-004",
+    "booking_id": "PN-1765432",
+    "customer_name": "Miguel Rodriguez",
+    "scenario": "Future booking question - low urgency",
+    "urgency": "LOW",
+    "description": "Customer asking about guarantee coverage for future trip. No current issue.",
+    "customer_message": "Hi, I have a booking from Madrid to Lisbon to São Paulo in February. I bought the guarantee but I'm not totally clear what it covers. If my first flight is delayed and I miss the connection, what happens?",
+    "context": {
+      "current_time": "2026-01-06T14:00:00Z",
+      "customer_location": "home",
+      "issue_type": "inquiry",
+      "guarantee_status": "active",
+      "time_critical": false
+    },
+    "expected_resolution": "Explain guarantee coverage clearly. Reference specific terms. Reassure customer they're covered for airline-caused delays. Provide contact info for when they're traveling.",
+    "complexity": "low"
+  },
+  {
+    "case_id": "CASE-005",
+    "booking_id": "PN-1998123",
+    "customer_name": "Emma Larsson",
+    "scenario": "Potential missed connection - proactive detection",
+    "urgency": "HIGH",
+    "description": "System detected SK1425 has 45-minute delay. Customer currently on flight. Will likely miss DY7014 connection at Copenhagen.",
+    "customer_message": null,
+    "context": {
+      "current_time": "2026-01-08T06:45:00Z",
+      "customer_location": "in_flight",
+      "detection_source": "flight_api",
+      "delay_detected": 45,
+      "connection_buffer": "2.25 hours originally, now 1.5 hours",
+      "guarantee_status": "active",
+      "previous_complaints": 2,
+      "proactive": true
+    },
+    "expected_resolution": "Proactive outreach. Inform customer of delay and tight connection. Have backup rebooking options ready. Monitor flight and be prepared to execute if connection missed. Handle sensitively given previous issues.",
+    "complexity": "medium"
+  },
+  {
+    "case_id": "CASE-006",
+    "booking_id": "PN-2001456",
+    "customer_name": "David Kim",
+    "scenario": "Missed connection - customer fault, no guarantee",
+    "urgency": "MEDIUM",
+    "description": "Customer arrived late to gate for AA150 due to traffic. Missed flight. Has no guarantee. Asking for help.",
+    "customer_message": "I got stuck in traffic and missed my flight from LA to New York. I know it's my fault but is there anything you can do? I really need to get to Boston today.",
+    "context": {
+      "current_time": "2026-01-25T08:30:00Z",
+      "customer_location": "LAX airport",
+      "missed_reason": "customer_late",
+      "guarantee_status": "none",
+      "time_critical": true
+    },
+    "expected_resolution": "Limited options. Not covered (customer fault + no guarantee). Can assist with rebooking but customer pays change fees + fare difference. Be empathetic but clear about policy limits. Check for goodwill options if low cost.",
+    "complexity": "medium"
+  },
+  {
+    "case_id": "CASE-007",
+    "booking_id": "PN-1847392",
+    "customer_name": "Sarah Chen",
+    "scenario": "Schedule change notification",
+    "urgency": "MEDIUM",
+    "description": "Thai Airways moved TG401 departure time 3 hours earlier. Customer notified 2 weeks before travel. Connection now impossible.",
+    "customer_message": "I just got an email that my Bangkok to Sydney flight time changed and now departs 3 hours earlier! My connection from London gets in way too late now. Can you fix this?",
+    "context": {
+      "current_time": "2026-01-02T10:00:00Z",
+      "customer_location": "home",
+      "change_type": "schedule_change",
+      "notice_period": "14 days",
+      "guarantee_status": "active",
+      "time_critical": false
+    },
+    "expected_resolution": "Covered by guarantee (major schedule change). Rebook on alternative BKK-SYD flight that works with BA284 arrival. No cost to customer. Confirm new itinerary ASAP.",
+    "complexity": "low"
+  },
+  {
+    "case_id": "CASE-008",
+    "booking_id": "PN-1847621",
+    "customer_name": "Priya Patel",
+    "scenario": "Refund request after resolution",
+    "urgency": "LOW",
+    "description": "Customer was rebooked after EK7 cancellation but wants refund instead. Premium guarantee holder.",
+    "customer_message": "Thank you for rebooking me, but actually I've decided I don't want to travel anymore after this mess. Can I just get a full refund instead?",
+    "context": {
+      "current_time": "2026-01-12T09:00:00Z",
+      "customer_location": "unknown",
+      "previous_resolution": "rebooking_completed",
+      "guarantee_status": "premium",
+      "customer_tier": "platinum",
+      "time_critical": false
+    },
+    "expected_resolution": "Full refund available (airline cancelled, guarantee holder, VIP). Process within 24-48 hours. Offer compensation voucher for inconvenience. Manager approval for goodwill gesture given tier + disruption.",
+    "complexity": "low"
+  }
+]
+
